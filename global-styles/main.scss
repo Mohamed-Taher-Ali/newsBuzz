@@ -1,0 +1,175 @@
+$mainFront: #50a67c;
+$mainBack: #f5f5f5;
+$secondBack: #ffffff;
+
+
+html, body, .container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $mainBack;
+}
+
+.cont {
+    background-color: $mainBack;
+    width: 80vw;
+    height: calc(100vh - 40px);
+    display: flex;
+}
+
+.mid {
+    width: 50%;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side {
+    width: 25%;
+    height: 100%;
+    background-color: $secondBack;
+}
+
+.header {
+    width: 100vw;
+    display: flex;
+    background-color: $mainFront;
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 1px 5px 2px grey;
+    z-index: 2;
+}
+
+.card-cont {
+    width: 80%;
+    background-color: white;
+    padding: 16px;
+    border-radius: 16px;
+    margin: 16px 0px;
+    box-shadow: 2px 9px 4px -7px grey;
+}
+
+.card-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+}
+
+.avatar {
+    width: 12%;
+    border-radius: 6px;
+}
+
+.title {
+    margin: 0px 6px;
+    font-weight: 600;
+}
+
+.date {
+    font-size: 12px;
+    color: #7d7d7d;
+}
+
+.tag-cont {
+    margin: 0px;
+    border-top: 1px solid #cccccc;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+
+.n-title {
+    font-size: 18px;
+}
+
+.tag {
+    border: 1px solid $mainFront;
+    padding: 1px 8px;
+    border-radius: 15px;
+    color: $mainFront;
+    font-size: 14px;
+    margin: 5px;
+}
+
+.logo {
+    font-size: 18px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.log-btn {
+    background-color: $mainFront;
+    border: 1px solid white;
+    color: white;
+    border-radius: 18px;
+    font-size: 15px;
+    padding: 1px 8px;
+}
+
+.reg-btn {
+    color: $mainFront;
+    border: 1px solid white;
+    color: $mainFront;
+    border-radius: 18px;
+    font-size: 15px;
+    padding: 1px 8px;
+    margin: 0px 6px;
+}
+
+.bars {
+    color: white;
+    font-size: 18px;
+    display: none;
+}
+
+.srch-cont {
+    background-color: white;
+    padding: 2px 6px;
+    display: flex;
+    border-radius: 15px;
+    align-items: center;
+    width: 40%;
+    max-width: 310px;
+}
+
+.srch-inpt {
+    width: 90%;
+    border: none;
+    margin: 2px 5px;
+}
+
+.wifi {
+    float: right;
+    font-size: 20px;
+    color: $mainFront;
+}
+
+button, input:focus {outline:0;}
+
+@media (max-width: 768px) { 
+    .cont {
+        width: 100vw;
+    }
+
+    .side {
+        display: none;
+    }
+
+    .mid {
+        width: 100%;
+    }
+
+    .bars{
+        display: initial;
+    }
+
+    .log-reg {
+        display: none;
+    }
+}
